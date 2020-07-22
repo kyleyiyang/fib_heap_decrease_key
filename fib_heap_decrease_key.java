@@ -1,5 +1,5 @@
-FIB-HEAP-DECREASE-KEY.H; x; k/
-1 if k > x:key
+FIB-HEAP-DECREASE-KEY(H, x, k)
+1 if k > x.key
 2 error “new key is greater than current key”
 3 x:key D k
 4 y D x:p
