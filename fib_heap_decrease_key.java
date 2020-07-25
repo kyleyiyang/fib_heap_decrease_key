@@ -1,8 +1,8 @@
 FIB-HEAP-DECREASE-KEY(H, x, k)
 1 if k > x.key
 2 error “new key is greater than current key”
-3 x:key D k
-4 y D x:p
+3 x.key = k
+4 y = x.p
 5 if y ¤ NIL and x:key < y:key
 6 CUT.H; x; y/
 7 CASCADING-CUT.H; y/
